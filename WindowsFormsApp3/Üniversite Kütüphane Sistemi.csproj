@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72D9E681-224C-41DB-B559-F0C6A766B659}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kitap Tablosu Grid Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap Tablosu Grid Görünüm.Designer.cs">
+      <DependentUpon>Kitap Tablosu Grid Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap Tablosu Sekmeli Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap Tablosu Sekmeli Görünüm.Designer.cs">
+      <DependentUpon>Kitap Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ödünç Kayıt Tablosu Sekmeli Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ödünç Kayıt Tablosu Sekmeli Görünüm.Designer.cs">
+      <DependentUpon>Ödünç Kayıt Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ödünç Kayıt Tablosu Grid Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ödünç Kayıt Tablosu Grid Görünüm.Designer.cs">
+      <DependentUpon>Ödünç Kayıt Tablosu Grid Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öğrenci Tablosu Sekmeli Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öğrenci Tablosu Sekmeli Görünüm.Designer.cs">
+      <DependentUpon>Öğrenci Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Öğrenci Tablosu Grid Görünüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Öğrenci Tablosu Grid Görünüm.Designer.cs">
+      <DependentUpon>Öğrenci Tablosu Grid Görünüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Ekranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Ekranı.Designer.cs">
+      <DependentUpon>Giriş Ekranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KütüphaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KütüphaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Kitap Tablosu Grid Görünüm.resx">
+      <DependentUpon>Kitap Tablosu Grid Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap Tablosu Sekmeli Görünüm.resx">
+      <DependentUpon>Kitap Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ödünç Kayıt Tablosu Sekmeli Görünüm.resx">
+      <DependentUpon>Ödünç Kayıt Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ödünç Kayıt Tablosu Grid Görünüm.resx">
+      <DependentUpon>Ödünç Kayıt Tablosu Grid Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öğrenci Tablosu Sekmeli Görünüm.resx">
+      <DependentUpon>Öğrenci Tablosu Sekmeli Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Öğrenci Tablosu Grid Görünüm.resx">
+      <DependentUpon>Öğrenci Tablosu Grid Görünüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Ekranı.resx">
+      <DependentUpon>Giriş Ekranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="KütüphaneDataSet.xsc">
+      <DependentUpon>KütüphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KütüphaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KütüphaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KütüphaneDataSet.xss">
+      <DependentUpon>KütüphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kütüphane.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
